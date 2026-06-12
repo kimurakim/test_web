@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기 테스트</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 8px; max-width: 300px; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>방명록 남기기</h2>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfkjGkaB6lB0gWy-qPCj6fd58NcDVHP9uaDlbMf4TgnQ1HoAA/viewform?usp=publish-editor" method="POST">
+        
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="entry.111111111" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">메시지</label>
+            <textarea id="message" name="entry.222222222" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">전송하기</button>
+    </form>
+
+</body>
+</html>
